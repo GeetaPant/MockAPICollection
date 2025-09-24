@@ -1,0 +1,28 @@
+package com.qa.api.managers;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
+public class ConfigManagers {
+	
+	private static Properties properties = new Properties();
+	
+	static {
+		try(InputStream input = ConfigManagers.class.getClassLoader().getResourceAsStream("Config\\config.properties")){
+			if(input!= null) {
+				properties.load(input);
+			}	
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	public static String get(String key) {
+		return properties.getProperty(key);
+	}
+	
+	public static void set(String key, String value) {
+		 properties.setProperty(key, value);
+	}
+
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name= "API Automation Suite" verbose="3">
+<test name="CREATE User Test">
+		<classes>
+			<class name="com.qa.api.tests.CreateUserTest" />
+		</classes>
+	</test>
+	<test name="GET User Test">
+		<classes>
+			<class name="com.qa.api.tests.GetUserTest" />
+		</classes>
+	</test>
+	 <test name="PUT User Test">
+		<classes>
+			<class name="com.qa.api.tests.UpdateUserTest" />
+		</classes>
+		</test>
+		<test name="DELETE User Test">
+		<classes>
+			<class name="com.qa.api.tests.DeleteUserTest" />
+		</classes>
+	</test>
+<test name="Contacts API User Test">
+<parameter name="baseUrl" value="https://thinking-tester-contact-list.herokuapp.com"></parameter>
+		<classes>
+			<class name="com.qa.contacts.api.tests.ContactsAPITest" />
+		</classes>
+	</test>
+	
+</suite>
