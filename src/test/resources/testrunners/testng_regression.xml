@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name= "API Automation Suite" verbose="3">
+<suite name= "API Mock Automation Suite" verbose="3">
 <test name="CREATE User Test">
 		<classes>
 			<class name="com.qa.api.tests.CreateUserTest" />
@@ -22,11 +22,40 @@
 			<class name="com.qa.api.tests.DeleteUserTest" />
 		</classes>
 	</test>
+	<test name="GetUser with Deserialisation Test">
+		<classes>
+			<class name="com.qa.api.tests.GetUserwithDeserializationTest" />
+		</classes>
+	</test>
 <test name="Contacts API User Test">
-<parameter name="baseUrl" value="https://thinking-tester-contact-list.herokuapp.com"></parameter>
 		<classes>
 			<class name="com.qa.contacts.api.tests.ContactsAPITest" />
 		</classes>
 	</test>
+	<test name="Basic Auth API User Test">
+		<classes>
+			<class name="com.qa.basicauth.api.tests.BasicAuthTest" />
+		</classes>
+	</test>
+	<test name="Spotify API Test">
+		<classes>
+			<class name="com.qa.spotify.tests.getArtistsListTest" />
+		</classes>
+	</test>
 	
+	<test name="FakeStore API Get Product Test">
+		<classes>
+			<class name="com.qa.fakestore.api.tests.getProductsTest" />
+		</classes>
+	</test>
+	<test name="FakeStore API Deserialisation Test">
+		<classes>
+			<class name="com.qa.fakestore.api.tests.getProductswithDeserilzation" />
+		</classes>
+		</test>
+		<test name="FakeStore API JSON Validatior Test">
+		<classes>
+			<class name="com.qa.fakestore.api.tests.ProductAPITestwithJsonPathValidator" />
+		</classes>
+	</test>
 </suite>
