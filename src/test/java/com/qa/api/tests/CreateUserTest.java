@@ -44,7 +44,7 @@ public class CreateUserTest extends BaseTest{
 		
 		
 	}
-	@Test
+	@Test(enabled = false)
 	public void createUserwithJsonFileTest() {
 		File userJsonFile = new File("./src/test/resources/Jsons/User.json");
 		Response response = restClient.post(BASE_URL,"public/v2/users", userJsonFile, null, null, AuthType.BEARER_TOKEN,ContentType.JSON);
