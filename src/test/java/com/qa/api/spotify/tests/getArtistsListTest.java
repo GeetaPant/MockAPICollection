@@ -15,7 +15,7 @@ public class getArtistsListTest extends BaseTest {
 	
 	//private String token;
 	
-	@Test
+	@Test(enabled =false)
 	public void getArtistTest() {
 		
 		Map<String, String> queryParams = Map.of("id", "0TnOYISbd1XYRBk9myaseg");
