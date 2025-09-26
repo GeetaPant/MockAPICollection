@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-15T14:53:21 IST" name="Default suite" finished-at="2025-09-15T14:53:25 IST" duration-ms="4220">
+  <suite started-at="2025-09-26T11:23:47 IST" name="Default suite" finished-at="2025-09-26T11:23:51 IST" duration-ms="4725">
     <groups>
     </groups>
-    <test started-at="2025-09-15T14:53:21 IST" name="Default test" finished-at="2025-09-15T14:53:25 IST" duration-ms="4220">
+    <test started-at="2025-09-26T11:23:47 IST" name="Default test" finished-at="2025-09-26T11:23:51 IST" duration-ms="4725">
       <class name="com.qa.api.spotify.tests.getArtistsListTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.api.spotify.tests.getArtistsListTest@4d5d943d]" started-at="2025-09-15T14:53:21 IST" name="setup" finished-at="2025-09-15T14:53:22 IST" duration-ms="860" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.api.spotify.tests.getArtistsListTest@13d73f29]" started-at="2025-09-26T11:23:47 IST" name="setup" finished-at="2025-09-26T11:23:47 IST" duration-ms="858" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getArtistTest()[pri:0, instance:com.qa.api.spotify.tests.getArtistsListTest@4d5d943d]" started-at="2025-09-15T14:53:22 IST" name="getArtistTest" finished-at="2025-09-15T14:53:25 IST" duration-ms="3297" status="FAIL">
+        <test-method signature="getArtistTest()[pri:0, instance:com.qa.api.spotify.tests.getArtistsListTest@13d73f29]" started-at="2025-09-26T11:23:47 IST" name="getArtistTest" finished-at="2025-09-26T11:23:51 IST" duration-ms="3703" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.

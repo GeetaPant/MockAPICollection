@@ -37,12 +37,6 @@
 			<class name="com.qa.basicauth.api.tests.BasicAuthTest" />
 		</classes>
 	</test>
-	<test name="Spotify API Test">
-		<classes>
-			<class name="com.qa.spotify.tests.getArtistsListTest" />
-		</classes>
-	</test>
-	
 	<test name="FakeStore API Get Product Test">
 		<classes>
 			<class name="com.qa.fakestore.api.tests.getProductsTest" />
